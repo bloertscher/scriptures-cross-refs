@@ -1,4 +1,5 @@
 from books_of_scripture import books_of_scripture
+import networkx as nx
 
 class Verse:
     """ A single verse entity
@@ -8,6 +9,7 @@ class Verse:
         self.book = book
         self.chapter = chapter
         self.verse_no = verse_no
+        # self.attr = ''
 
     # https://stackoverflow.com/a/2909119
     def __key(self):
@@ -23,6 +25,7 @@ class Verse:
 
     def __repr__(self):
         return '{}'.format(self.__key())
+        # return '{}'.format((self.book, self.chapter, self.verse_no, self.attr))
 
     def __lt__(self, other):
         return books_of_scripture.index(self.book.lower()) < books_of_scripture.index(other.book.lower()) or self.chapter < other.chapter or self.verse_no < other.verse_no
@@ -60,28 +63,35 @@ def main():
     v = Verse('1 Ne', '1', '7')
     w = Verse('2 Ne', '3', '8')
 
-    r = Reference(v, w)
-    q = Reference(w, v)
+    # r = Reference(v, w)
+    # q = Reference(w, v)
 
-    s = set()
-    s.add(v)
-    s.add(w)
-    s.add(w)
-    pprint(s)
+    # s = set()
+    # s.add(v)
+    # s.add(w)
+    # s.add(w)
+    # pprint(s)
 
-    rs = set()
-    rs.add(r)
-    rs.add(q)
-    pprint(rs)
-    print(Reference(Verse('1 Ne', '1', '7'), Verse('2 Ne', '3', '8')) in rs)
+    # rs = set()
+    # rs.add(r)
+    # rs.add(q)
+    # pprint(rs)
+    # print(Reference(Verse('1 Ne', '1', '7'), Verse('2 Ne', '3', '8')) in rs)
 
-    l = list([v, w, Verse('1 Ne', '1', '6')])
-    l = sorted(l)
-    pprint(l)
+    # l = list([v, w, Verse('1 Ne', '1', '6')])
+    # l = sorted(l)
+    # pprint(l)
 
-    h = list([q, r])
-    h = sorted(h)
-    pprint(h)
+    # h = list([q, r])
+    # h = sorted(h)
+    # pprint(h)
+
+    pprint(v)
+    x = Verse('1 Ne', '1', '7')
+    x.attr = 'not empty'
+    pprint(v)
+    pprint(x)
+
 
 if __name__ == '__main__':
     main()

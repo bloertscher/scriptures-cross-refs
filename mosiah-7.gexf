@@ -1,0 +1,779 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.2" xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2019-12-29">
+    <creator>NetworkX 2.4</creator>
+  </meta>
+  <graph defaultedgetype="directed" mode="static" name="">
+    <attributes class="edge" mode="static">
+      <attribute id="4" title="fnote" type="string" />
+      <attribute id="5" title="additional" type="string" />
+    </attributes>
+    <attributes class="node" mode="static">
+      <attribute id="0" title="book" type="string" />
+      <attribute id="1" title="chapter" type="string" />
+      <attribute id="2" title="verse" type="string" />
+      <attribute id="3" title="stdwork" type="string" />
+    </attributes>
+    <nodes>
+      <node id="Mosiah 7" label="Mosiah 7">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="7" />
+          <attvalue for="2" value="33" />
+          <attvalue for="3" value="bofm" />
+        </attvalues>
+      </node>
+      <node id="Omni 1" label="Omni 1">
+        <attvalues>
+          <attvalue for="0" value="Omni" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="13" />
+        </attvalues>
+      </node>
+      <node id="2 Ne 5" label="2 Ne 5">
+        <attvalues>
+          <attvalue for="0" value="2 Ne" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="16" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 9" label="Mosiah 9">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="9" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 8" label="Mosiah 8">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="8" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="Num 13" label="Num 13">
+        <attvalues>
+          <attvalue for="0" value="Num" />
+          <attvalue for="1" value="13" />
+          <attvalue for="2" value="25" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 11" label="Mosiah 11">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="11" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 22" label="Mosiah 22">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="22" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="Alma 23" label="Alma 23">
+        <attvalues>
+          <attvalue for="0" value="Alma" />
+          <attvalue for="1" value="23" />
+          <attvalue for="2" value="12" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 21" label="Mosiah 21">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="21" />
+          <attvalue for="2" value="25" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 28" label="Mosiah 28">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="28" />
+          <attvalue for="2" value="1" />
+        </attvalues>
+      </node>
+      <node id="Alma 50" label="Alma 50">
+        <attvalues>
+          <attvalue for="0" value="Alma" />
+          <attvalue for="1" value="50" />
+          <attvalue for="2" value="8" />
+        </attvalues>
+      </node>
+      <node id="Alma 17" label="Alma 17">
+        <attvalues>
+          <attvalue for="0" value="Alma" />
+          <attvalue for="1" value="17" />
+          <attvalue for="2" value="20" />
+        </attvalues>
+      </node>
+      <node id="Alma 14" label="Alma 14">
+        <attvalues>
+          <attvalue for="0" value="Alma" />
+          <attvalue for="1" value="14" />
+          <attvalue for="2" value="19" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 19" label="Mosiah 19">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="19" />
+          <attvalue for="2" value="15" />
+        </attvalues>
+      </node>
+      <node id="Josh 20" label="Josh 20">
+        <attvalues>
+          <attvalue for="0" value="Josh" />
+          <attvalue for="1" value="20" />
+          <attvalue for="2" value="4" />
+        </attvalues>
+      </node>
+      <node id="Alma 47" label="Alma 47">
+        <attvalues>
+          <attvalue for="0" value="Alma" />
+          <attvalue for="1" value="47" />
+          <attvalue for="2" value="22" />
+        </attvalues>
+      </node>
+      <node id="Ex 3" label="Ex 3">
+        <attvalues>
+          <attvalue for="0" value="Ex" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="6" />
+        </attvalues>
+      </node>
+      <node id="1 Ne 19" label="1 Ne 19">
+        <attvalues>
+          <attvalue for="0" value="1 Ne" />
+          <attvalue for="1" value="19" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="D&amp;C 136" label="D&amp;C 136">
+        <attvalues>
+          <attvalue for="0" value="D&amp;C" />
+          <attvalue for="1" value="136" />
+          <attvalue for="2" value="21" />
+        </attvalues>
+      </node>
+      <node id="Ex 12" label="Ex 12">
+        <attvalues>
+          <attvalue for="0" value="Ex" />
+          <attvalue for="1" value="12" />
+          <attvalue for="2" value="51" />
+        </attvalues>
+      </node>
+      <node id="1 Ne 17" label="1 Ne 17">
+        <attvalues>
+          <attvalue for="0" value="1 Ne" />
+          <attvalue for="1" value="17" />
+          <attvalue for="2" value="28" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 12" label="Mosiah 12">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="12" />
+          <attvalue for="2" value="6" />
+        </attvalues>
+      </node>
+      <node id="Alma 36" label="Alma 36">
+        <attvalues>
+          <attvalue for="0" value="Alma" />
+          <attvalue for="1" value="36" />
+          <attvalue for="2" value="28" />
+        </attvalues>
+      </node>
+      <node id="Josh 2" label="Josh 2">
+        <attvalues>
+          <attvalue for="0" value="Josh" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="1 Ne 4" label="1 Ne 4">
+        <attvalues>
+          <attvalue for="0" value="1 Ne" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="2" />
+        </attvalues>
+      </node>
+      <node id="Ex 16" label="Ex 16">
+        <attvalues>
+          <attvalue for="0" value="Ex" />
+          <attvalue for="1" value="16" />
+          <attvalue for="2" value="15" />
+        </attvalues>
+      </node>
+      <node id="Num 11" label="Num 11">
+        <attvalues>
+          <attvalue for="0" value="Num" />
+          <attvalue for="1" value="11" />
+          <attvalue for="2" value="7" />
+        </attvalues>
+      </node>
+      <node id="Josh 5" label="Josh 5">
+        <attvalues>
+          <attvalue for="0" value="Josh" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="12" />
+        </attvalues>
+      </node>
+      <node id="John 6" label="John 6">
+        <attvalues>
+          <attvalue for="0" value="John" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="49" />
+        </attvalues>
+      </node>
+      <node id="1 Ne 2" label="1 Ne 2">
+        <attvalues>
+          <attvalue for="0" value="1 Ne" />
+          <attvalue for="1" value="2" />
+          <attvalue for="2" value="2" />
+        </attvalues>
+      </node>
+      <node id="Deut 28" label="Deut 28">
+        <attvalues>
+          <attvalue for="0" value="Deut" />
+          <attvalue for="1" value="28" />
+          <attvalue for="2" value="15" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 10" label="Mosiah 10">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="10" />
+          <attvalue for="2" value="18" />
+        </attvalues>
+      </node>
+      <node id="Prov 29" label="Prov 29">
+        <attvalues>
+          <attvalue for="0" value="Prov" />
+          <attvalue for="1" value="29" />
+          <attvalue for="2" value="2" />
+        </attvalues>
+      </node>
+      <node id="Ezek 24" label="Ezek 24">
+        <attvalues>
+          <attvalue for="0" value="Ezek" />
+          <attvalue for="1" value="24" />
+          <attvalue for="2" value="23" />
+        </attvalues>
+      </node>
+      <node id="Hel 9" label="Hel 9">
+        <attvalues>
+          <attvalue for="0" value="Hel" />
+          <attvalue for="1" value="9" />
+          <attvalue for="2" value="22" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 17" label="Mosiah 17">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="17" />
+          <attvalue for="2" value="13" />
+        </attvalues>
+      </node>
+      <node id="Isa 9" label="Isa 9">
+        <attvalues>
+          <attvalue for="0" value="Isa" />
+          <attvalue for="1" value="9" />
+          <attvalue for="2" value="6" />
+        </attvalues>
+      </node>
+      <node id="2 Ne 26" label="2 Ne 26">
+        <attvalues>
+          <attvalue for="0" value="2 Ne" />
+          <attvalue for="1" value="26" />
+          <attvalue for="2" value="12" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 27" label="Mosiah 27">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="27" />
+          <attvalue for="2" value="31" />
+        </attvalues>
+      </node>
+      <node id="Gen 1" label="Gen 1">
+        <attvalues>
+          <attvalue for="0" value="Gen" />
+          <attvalue for="1" value="1" />
+          <attvalue for="2" value="26" />
+        </attvalues>
+      </node>
+      <node id="Ether 3" label="Ether 3">
+        <attvalues>
+          <attvalue for="0" value="Ether" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="15" />
+        </attvalues>
+      </node>
+      <node id="D&amp;C 20" label="D&amp;C 20">
+        <attvalues>
+          <attvalue for="0" value="D&amp;C" />
+          <attvalue for="1" value="20" />
+          <attvalue for="2" value="18" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 13" label="Mosiah 13">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="13" />
+          <attvalue for="2" value="34" />
+        </attvalues>
+      </node>
+      <node id="Mosiah 15" label="Mosiah 15">
+        <attvalues>
+          <attvalue for="0" value="Mosiah" />
+          <attvalue for="1" value="15" />
+          <attvalue for="2" value="2" />
+        </attvalues>
+      </node>
+      <node id="Alma 7" label="Alma 7">
+        <attvalues>
+          <attvalue for="0" value="Alma" />
+          <attvalue for="1" value="7" />
+          <attvalue for="2" value="9" />
+        </attvalues>
+      </node>
+      <node id="Josh 24" label="Josh 24">
+        <attvalues>
+          <attvalue for="0" value="Josh" />
+          <attvalue for="1" value="24" />
+          <attvalue for="2" value="20" />
+        </attvalues>
+      </node>
+      <node id="1 Sam 12" label="1 Sam 12">
+        <attvalues>
+          <attvalue for="0" value="1 Sam" />
+          <attvalue for="1" value="12" />
+          <attvalue for="2" value="15" />
+        </attvalues>
+      </node>
+      <node id="2 Chr 24" label="2 Chr 24">
+        <attvalues>
+          <attvalue for="0" value="2 Chr" />
+          <attvalue for="1" value="24" />
+          <attvalue for="2" value="20" />
+        </attvalues>
+      </node>
+      <node id="Jer 6" label="Jer 6">
+        <attvalues>
+          <attvalue for="0" value="Jer" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="21" />
+        </attvalues>
+      </node>
+      <node id="Hosea 8" label="Hosea 8">
+        <attvalues>
+          <attvalue for="0" value="Hosea" />
+          <attvalue for="1" value="8" />
+          <attvalue for="2" value="7" />
+        </attvalues>
+      </node>
+      <node id="Gal 6" label="Gal 6">
+        <attvalues>
+          <attvalue for="0" value="Gal" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="8" />
+        </attvalues>
+      </node>
+      <node id="D&amp;C 6" label="D&amp;C 6">
+        <attvalues>
+          <attvalue for="0" value="D&amp;C" />
+          <attvalue for="1" value="6" />
+          <attvalue for="2" value="33" />
+        </attvalues>
+      </node>
+      <node id="Luke 3" label="Luke 3">
+        <attvalues>
+          <attvalue for="0" value="Luke" />
+          <attvalue for="1" value="3" />
+          <attvalue for="2" value="17" />
+        </attvalues>
+      </node>
+      <node id="2 Ne 15" label="2 Ne 15">
+        <attvalues>
+          <attvalue for="0" value="2 Ne" />
+          <attvalue for="1" value="15" />
+          <attvalue for="2" value="24" />
+        </attvalues>
+      </node>
+      <node id="Gen 41" label="Gen 41">
+        <attvalues>
+          <attvalue for="0" value="Gen" />
+          <attvalue for="1" value="41" />
+          <attvalue for="2" value="23" />
+        </attvalues>
+      </node>
+      <node id="Jer 18" label="Jer 18">
+        <attvalues>
+          <attvalue for="0" value="Jer" />
+          <attvalue for="1" value="18" />
+          <attvalue for="2" value="17" />
+        </attvalues>
+      </node>
+      <node id="Ezek 27" label="Ezek 27">
+        <attvalues>
+          <attvalue for="0" value="Ezek" />
+          <attvalue for="1" value="27" />
+          <attvalue for="2" value="26" />
+        </attvalues>
+      </node>
+      <node id="Jonah 4" label="Jonah 4">
+        <attvalues>
+          <attvalue for="0" value="Jonah" />
+          <attvalue for="1" value="4" />
+          <attvalue for="2" value="8" />
+        </attvalues>
+      </node>
+      <node id="Deut 30" label="Deut 30">
+        <attvalues>
+          <attvalue for="0" value="Deut" />
+          <attvalue for="1" value="30" />
+          <attvalue for="2" value="10" />
+        </attvalues>
+      </node>
+      <node id="Lam 5" label="Lam 5">
+        <attvalues>
+          <attvalue for="0" value="Lam" />
+          <attvalue for="1" value="5" />
+          <attvalue for="2" value="21" />
+        </attvalues>
+      </node>
+      <node id="Morm 9" label="Morm 9">
+        <attvalues>
+          <attvalue for="0" value="Morm" />
+          <attvalue for="1" value="9" />
+          <attvalue for="2" value="6" />
+        </attvalues>
+      </node>
+      <node id="D&amp;C 98" label="D&amp;C 98">
+        <attvalues>
+          <attvalue for="0" value="D&amp;C" />
+          <attvalue for="1" value="98" />
+          <attvalue for="2" value="47" />
+        </attvalues>
+      </node>
+    </nodes>
+    <edges>
+      <edge id="0" source="Mosiah 7" target="Omni 1">
+        <attvalues>
+          <attvalue for="4" value="b" />
+          <attvalue for="5" value="12, 27" />
+        </attvalues>
+      </edge>
+      <edge id="1" source="Mosiah 7" target="2 Ne 5">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="2" source="Mosiah 7" target="Mosiah 9">
+        <attvalues>
+          <attvalue for="4" value="a" />
+          <attvalue for="5" value="6, 8, 14" />
+        </attvalues>
+      </edge>
+      <edge id="3" source="Mosiah 7" target="Mosiah 8">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="4" source="Mosiah 7" target="Num 13">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="5" source="Mosiah 7" target="Mosiah 11">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="6" source="Mosiah 7" target="Mosiah 22">
+        <attvalues>
+          <attvalue for="4" value="b" />
+          <attvalue for="5" value="8, 11" />
+        </attvalues>
+      </edge>
+      <edge id="7" source="Mosiah 7" target="Alma 23">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="8" source="Mosiah 7" target="Mosiah 21">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="9" source="Mosiah 7" target="Mosiah 28">
+        <attvalues>
+          <attvalue for="4" value="b" />
+          <attvalue for="5" value="1, 5" />
+        </attvalues>
+      </edge>
+      <edge id="10" source="Mosiah 7" target="Alma 50">
+        <attvalues>
+          <attvalue for="4" value="b" />
+          <attvalue for="5" value="8, 11" />
+        </attvalues>
+      </edge>
+      <edge id="11" source="Mosiah 7" target="Alma 17">
+        <attvalues>
+          <attvalue for="4" value="c" />
+        </attvalues>
+      </edge>
+      <edge id="12" source="Mosiah 7" target="Alma 14">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="13" source="Mosiah 7" target="Mosiah 19">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="14" source="Mosiah 7" target="Josh 20">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="15" source="Mosiah 7" target="Alma 47">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="16" source="Mosiah 7" target="Ex 3">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="17" source="Mosiah 7" target="1 Ne 19">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="18" source="Mosiah 7" target="D&amp;C 136">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="19" source="Mosiah 7" target="Ex 12">
+        <attvalues>
+          <attvalue for="4" value="c" />
+        </attvalues>
+      </edge>
+      <edge id="20" source="Mosiah 7" target="1 Ne 17">
+        <attvalues>
+          <attvalue for="4" value="f" />
+        </attvalues>
+      </edge>
+      <edge id="21" source="Mosiah 7" target="Mosiah 12">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="22" source="Mosiah 7" target="Alma 36">
+        <attvalues>
+          <attvalue for="4" value="c" />
+        </attvalues>
+      </edge>
+      <edge id="23" source="Mosiah 7" target="Josh 2">
+        <attvalues>
+          <attvalue for="4" value="e" />
+        </attvalues>
+      </edge>
+      <edge id="24" source="Mosiah 7" target="1 Ne 4">
+        <attvalues>
+          <attvalue for="4" value="e" />
+        </attvalues>
+      </edge>
+      <edge id="25" source="Mosiah 7" target="Ex 16">
+        <attvalues>
+          <attvalue for="4" value="f" />
+        </attvalues>
+      </edge>
+      <edge id="26" source="Mosiah 7" target="Num 11">
+        <attvalues>
+          <attvalue for="4" value="f" />
+        </attvalues>
+      </edge>
+      <edge id="27" source="Mosiah 7" target="Josh 5">
+        <attvalues>
+          <attvalue for="4" value="f" />
+        </attvalues>
+      </edge>
+      <edge id="28" source="Mosiah 7" target="John 6">
+        <attvalues>
+          <attvalue for="4" value="f" />
+        </attvalues>
+      </edge>
+      <edge id="29" source="Mosiah 7" target="1 Ne 2">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="30" source="Mosiah 7" target="Deut 28">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="31" source="Mosiah 7" target="Mosiah 10">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="32" source="Mosiah 7" target="Prov 29">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="33" source="Mosiah 7" target="Ezek 24">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="34" source="Mosiah 7" target="Hel 9">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="35" source="Mosiah 7" target="Mosiah 17">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="36" source="Mosiah 7" target="Isa 9">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="37" source="Mosiah 7" target="2 Ne 26">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="38" source="Mosiah 7" target="Mosiah 27">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="39" source="Mosiah 7" target="Gen 1">
+        <attvalues>
+          <attvalue for="4" value="c" />
+        </attvalues>
+      </edge>
+      <edge id="40" source="Mosiah 7" target="Ether 3">
+        <attvalues>
+          <attvalue for="4" value="c" />
+        </attvalues>
+      </edge>
+      <edge id="41" source="Mosiah 7" target="D&amp;C 20">
+        <attvalues>
+          <attvalue for="4" value="c" />
+        </attvalues>
+      </edge>
+      <edge id="42" source="Mosiah 7" target="Mosiah 13">
+        <attvalues>
+          <attvalue for="4" value="d" />
+        </attvalues>
+      </edge>
+      <edge id="43" source="Mosiah 7" target="Mosiah 15">
+        <attvalues>
+          <attvalue for="4" value="d" />
+        </attvalues>
+      </edge>
+      <edge id="44" source="Mosiah 7" target="Alma 7">
+        <attvalues>
+          <attvalue for="4" value="d" />
+        </attvalues>
+      </edge>
+      <edge id="45" source="Mosiah 7" target="Josh 24">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="46" source="Mosiah 7" target="1 Sam 12">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="47" source="Mosiah 7" target="2 Chr 24">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="48" source="Mosiah 7" target="Jer 6">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="49" source="Mosiah 7" target="Hosea 8">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="50" source="Mosiah 7" target="Gal 6">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="51" source="Mosiah 7" target="D&amp;C 6">
+        <attvalues>
+          <attvalue for="4" value="b" />
+        </attvalues>
+      </edge>
+      <edge id="52" source="Mosiah 7" target="Luke 3">
+        <attvalues>
+          <attvalue for="4" value="c" />
+        </attvalues>
+      </edge>
+      <edge id="53" source="Mosiah 7" target="2 Ne 15">
+        <attvalues>
+          <attvalue for="4" value="c" />
+        </attvalues>
+      </edge>
+      <edge id="54" source="Mosiah 7" target="Gen 41">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="55" source="Mosiah 7" target="Jer 18">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="56" source="Mosiah 7" target="Ezek 27">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="57" source="Mosiah 7" target="Jonah 4">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="58" source="Mosiah 7" target="Deut 30">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="59" source="Mosiah 7" target="Lam 5">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="60" source="Mosiah 7" target="Morm 9">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+      <edge id="61" source="Mosiah 7" target="D&amp;C 98">
+        <attvalues>
+          <attvalue for="4" value="a" />
+        </attvalues>
+      </edge>
+    </edges>
+  </graph>
+</gexf>
