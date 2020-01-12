@@ -7,6 +7,8 @@ from pprint import pprint
 from unicodedata import normalize
 import networkx as nx
 from classes import Verse
+import os
+from pathlib import Path
 
 # url = 'https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng'
 # headers = {'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.3'}
@@ -30,10 +32,32 @@ def main():
 
     G = nx.DiGraph()
 
-    currentwork = 'bofm'
-    currentbook = 'Mosiah'
-    currentchapter = '7'
-    with open(f'wget/www.churchofjesuschrist.org/study/scriptures/{currentwork.lower()}/{currentbook.lower()}/{currentchapter}') as html:
+    for root, dirs, files in os.walk(f'wget/www.churchofjesuschrist.org/study/scriptures/'):
+        for f in files:
+            p = Path(root)
+            print('work: {}, book: {}, chapter: {}'.format(
+                p.parts[-2], p.parts[-1], f
+            ))
+            process_chapter(G, os.path.join(root, f), p.parts[-2], p.parts[-1], f)
+
+
+        # for u, v, fnote in G.edges(data='fnote'):
+        #     if fnote == 'b':
+        #         print(u, v)
+        #         # u.attr = 'found'
+        #         print(G.nodes[u]['stdwork'])
+        # pprint(G.edges)
+        # for node in filter(lambda item: item.book == 'Mosiah', G.nodes):
+            # print(node)
+
+        nx.write_gexf(G, './all-refs.gexf', prettyprint=False)
+
+
+def process_chapter(G, filename, work, book, chapter):
+    currentwork = work
+    currentbook = book
+    currentchapter = chapter
+    with open(filename) as html:
         soup = BeautifulSoup(html, 'html.parser')
 
         # related content is the side panel with all the footnotes
@@ -75,23 +99,6 @@ def main():
                 # G.nodes[orig]['stdwork'] = currentwork
 
 
-        # for u, v, fnote in G.edges(data='fnote'):
-        #     if fnote == 'b':
-        #         print(u, v)
-        #         # u.attr = 'found'
-        #         print(G.nodes[u]['stdwork'])
-        # pprint(G.edges)
-        # for node in filter(lambda item: item.book == 'Mosiah', G.nodes):
-            # print(node)
-
-        nx.write_gexf(G, './mosiah-7.gexf', prettyprint=True)
-
-        # links = footnotes[2].find_all('a')
-        # print(links)
-
-        # { std_work : BoM,
-        #
-        # }
 
 if __name__ == '__main__':
     main()
