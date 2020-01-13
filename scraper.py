@@ -6,39 +6,56 @@ from collections import defaultdict
 from pprint import pprint
 from unicodedata import normalize
 import networkx as nx
-from classes import Verse
+# from classes import Verse
 import os
 from pathlib import Path
+from books_of_scripture import *
 
 # url = 'https://www.churchofjesuschrist.org/study/scriptures/bofm/1-ne/1?lang=eng'
 # headers = {'user-agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/62.0.3202.94 Safari/537.3'}
 # request = urllib.request.Request(url,headers=headers)
 # html = urllib.request.urlopen(request).read()
+"""Global variables"""
+verse_num_re = re.compile(r'note(\d+)([a-z])_')
+# Get a list of all the standard works
+books_list = [line.rstrip() for line in open('books-of-scripture.txt')]
+or_books = '|'.join(books_list)
+reference_re = re.compile(f'({or_books})' + r''
+                    r'[.]? '
+                    r'(\d+)[:]' # chapter number
+                    r'(\d+)'    # verse number
+                    r'( ?\(([0-9, -]+)\))?' # extra verses
+                    r'', re.IGNORECASE)
+
+
 def verse_key(book, chapter, verse):
-    # return f'{book} {chapter}:{verse}'
-    return f'{book} {chapter}'
+    return f'{book} {chapter}:{verse}'
+    # return f'{book} {chapter}'
+
+
+def lower_abbrev_to_upper(lower):
+    try:
+        upper = books_abbrev[lower_books_abbrev.index(lower)]
+
+    except ValueError:
+        upper = lower
+        print(f'Failed to find correct uppercase version of {lower}')
+    return upper
+
 
 def main():
-    verse_num_re = re.compile(r'note(\d+)([a-z])_')
-    # Get a list of all the standard works
-    books_list = [line.rstrip() for line in open('books-of-scripture.txt')]
-    or_books = '|'.join(books_list)
-    reference_re = re.compile(f'({or_books})' + r''
-                        r'[.]? '
-                        r'(\d+)[:]' # chapter number
-                        r'(\d+)'    # verse number
-                        r'( ?\(([0-9, -]+)\))?' # extra verses
-                        r'', re.IGNORECASE)
-
     G = nx.DiGraph()
 
-    for root, dirs, files in os.walk(f'wget/www.churchofjesuschrist.org/study/scriptures/'):
+    for root, dirs, files in os.walk(f'www.churchofjesuschrist.org/study/scriptures/'):
         for f in files:
             p = Path(root)
-            print('work: {}, book: {}, chapter: {}'.format(
-                p.parts[-2], p.parts[-1], f
-            ))
-            process_chapter(G, os.path.join(root, f), p.parts[-2], p.parts[-1], f)
+            # print('work: {}, book: {}, chapter: {}, path: {}'.format(
+            #     p.parts[-2], p.parts[-1], f, os.path.join(root, f)
+            # ))
+            print(f'processing {os.path.join(root, f)}')
+            process_chapter(G, os.path.join(root, f), p.parts[-2],
+                lower_abbrev_to_upper(p.parts[-1]), f
+            )
 
 
         # for u, v, fnote in G.edges(data='fnote'):
@@ -50,7 +67,7 @@ def main():
         # for node in filter(lambda item: item.book == 'Mosiah', G.nodes):
             # print(node)
 
-        nx.write_gexf(G, './all-refs.gexf', prettyprint=False)
+        nx.write_gexf(G, './all-refs.gexf', prettyprint=True)
 
 
 def process_chapter(G, filename, work, book, chapter):
@@ -62,6 +79,10 @@ def process_chapter(G, filename, work, book, chapter):
 
         # related content is the side panel with all the footnotes
         related_content = soup.select_one('[class|=panelGridLayout]')
+        if not related_content:
+            print(f'Failed to find related_content for {filename}!')
+            return
+
         footnotes = related_content.find_all('p')
 
         for footnote in footnotes[:]:
@@ -87,7 +108,7 @@ def process_chapter(G, filename, work, book, chapter):
                         link_text = preceding_book + ' ' + link_text
                         lm = reference_re.match(link_text)
                 if not lm:
-                    print('Failed to match any for {}'.format(link_text))
+                    # print('Failed to match any for {}'.format(link_text))
                     continue
                 orig = verse_key(currentbook, currentchapter, verse_num)
                 dest = verse_key(lm.group(1), lm.group(2), lm.group(3))
@@ -96,8 +117,6 @@ def process_chapter(G, filename, work, book, chapter):
                 G.add_edge(orig, dest, fnote=letter)
                 if lm.group(5):
                     G.edges[orig, dest]['additional'] = lm.group(5)
-                # G.nodes[orig]['stdwork'] = currentwork
-
 
 
 if __name__ == '__main__':
