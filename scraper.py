@@ -1,6 +1,5 @@
 import urllib.request
 from bs4 import BeautifulSoup
-import json
 import re
 from collections import defaultdict
 from pprint import pprint
@@ -113,7 +112,7 @@ def process_chapter(G, filename, work, book, chapter):
                 orig = verse_key(currentbook, currentchapter, verse_num)
                 dest = verse_key(lm.group(1), lm.group(2), lm.group(3))
                 G.add_node(orig, book=currentbook, chapter=currentchapter, verse=verse_num, stdwork=currentwork)
-                G.add_node(dest, book=lm.group(1), chapter=lm.group(2), verse=lm.group(3))
+                G.add_node(dest, book=lm.group(1), chapter=lm.group(2), verse=lm.group(3), stdwork=get_stdwork(lm.group(1)))
                 G.add_edge(orig, dest, fnote=letter)
                 if lm.group(5):
                     G.edges[orig, dest]['additional'] = lm.group(5)

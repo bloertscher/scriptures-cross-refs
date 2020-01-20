@@ -1,3 +1,20 @@
+
+def get_stdwork(abbrev_book):
+    if abbrev_book == 'D&C':
+        return 'dc-testament'
+    idx = books_abbrev.index(abbrev_book)
+    if idx >= books_abbrev.index('Gen') and idx <= books_abbrev.index('Mal'):
+        return 'ot'
+    if idx >= books_abbrev.index('Matt') and idx <= books_abbrev.index('Rev'):
+        return 'nt'
+    if idx >= books_abbrev.index('1 Ne') and idx <= books_abbrev.index('Moro'):
+        return 'bofm'
+    if idx >= books_abbrev.index('Moses') and idx <= books_abbrev.index('A of F'):
+        return 'pgp'
+    raise ValueError
+
+
+
 """The names of books in the filepath"""
 lower_books_abbrev = [
 'gen',
